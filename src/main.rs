@@ -23,7 +23,6 @@ enum Commands {
         // TBC
     },
     #[command(about = "List tasks")]
-    #[command(arg_required_else_help = true)]
     List {
         #[arg(short, long, help = "Show all tasks including completed ones", action = ArgAction::SetTrue)]
         all: Option<bool>,
